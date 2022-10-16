@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+<body style="font-size:25px">
+<form action="">
+  <!-- Using checkbox -->
+  <form name="input" action="html_form_action.asp" method="get">
+I have a Bike:
+<input type="checkbox" name="vehicle" value="Bike" checked="checked"> <br />
+I have car:
+<input type="checkbox" name="vehicle" value="car">
+<br />
+I have an airplane:
+<input type="checkbox" name="vehicle" value="airplane">
+<br />
+  <input type="submit" value="submit">
+  <br /> 
+</form>
+
+  <!-- Using Radio -->
+Male:
+<input type="radio" checked="checked" name="sex" value="Male"> <br />
+Female:
+<input type="radio" name="sex" value="Female"> <br />
+<!-- Using select for drop-down list -->
+<select name="cars" style="font-size:20px">
+  <option value="volvo">volvo</option>
+  <option value="saap">saap</option>
+  <option value="fiat">fiat</option>
+  <option value="Audi">Audi</option>
+</select> <br />
+<select name="car" style="font-size:20px">
+  <option value="volvo">volvo</option>
+  <option value="saap">saap</option>
+  <option value="fiat" selected="selected">fiat</option>
+  <option value="Audi">Audi</option> 
+</select> <br /> <br />
+  <!-- Using a Textarea -->
+  <textarea cols="30" rows="10" style="font-size:25px"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam quaerat perspiciatis temporibus sed eius possimus blanditiis asperiores, expedita ea sint dolorem eveniet aliquid dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi velit pariatur quod ipsa veritatis porro inventore cupiditate nesciunt harum fugiat animi ducimus facilis error repudiandae, voluptate dicta eum quae!</textarea>
+  <br />
+  <!-- Using button -->
+  <input type="button" value="Hello world!!">
+     <br /> <br />
+     <!-- Using fieldset with legend -->
+  <fieldset>
+    <legend>Health Information</legend>
+    Height: <input type="text" size="3"> 
+    Weight: <input type="text" size="3">
+  </fieldset>
+</form>
+<!-- submitting form to a server address -->
+<form name="input" action="html_form_submit.asp" method="get">
+Username:
+<input type="text" name="User">
+<input type="submit" value="submit">
+</form>
+<form name="input" action="html_form_action.asp" method="get">
+Type your first name:
+<input type="text" name="firstname" value="Milky" size="20px"> <br />
+type your last name:
+<input type="text" name="lastname" value="Mouse" size="20px"> <br />
+<input type="submit" value="submit">
+</form>
+<!-- Use Label -->
+<form action="">
+  <label for="firstName">firstName:</label>
+  <input type="text" name="firstname" value="Cat">
+</form>
+</body>
+</html>
